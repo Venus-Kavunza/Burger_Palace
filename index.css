@@ -371,14 +371,63 @@ body .container .card .box .content a:hover {
   top: 200px;
 
 }
-.footerformat {
-    margin-left: 20px;
-    text-align: left;
+.about{
+  padding-left: 10%;
 }
-.btncol {
-    background-color: #fa9638;
-    border: none;
-    border-radius: 20px;
-    margin-top: 50px;
-    padding: 10px;
+
+.large{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.sharing{
+  display: flex;
+  flex-direction: row;
+  background-color: #F6B400;
+  height: 45rem;
+  position: relative;
+  margin-top: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.download{
+  width: 24rem;
+}
+
+.phones{
+  height: 30rem;
+}
+.loggi{
+  position: absolute;
+  left: 40px;
+}
+.site{
+  align-items: center;
+  justify-content: center;
+}
+.subscribe{
+  position: relative;
+  left:580px;
+  bottom: 140px;
+}
+.links{
+  position: relative;
+  left: 200px;
+}
+
+.social{
+position: relative;
+top:100px;
+left: 305px;
+}
+#copyright{
+  position: relative;
+  right: 650px;
+  top: 100px;
+
+}
+#design{
+position: relative;
+left: 308px;
+top: 30px;
 }
