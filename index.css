@@ -7,14 +7,15 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  background: url(../assets/body.png), no-repeat;
-  background-size: cover;
-  min-height: 704px;
-  max-width: 1100%;
+  
 }
 nav{
   height: 80px;
   width: 100%;
+  background-size: cover;
+  min-height: 704px;
+  max-width: 1300%;
+  font-family: 'Poppins', sans-serif;
 }
 
 label.logo{
@@ -145,17 +146,14 @@ p{
   font-size: large;
   display: flex;
   flex-direction: row;
-  margin-left: 26em;
   color:#11010a;
   font-style: italic;
   font-weight: 1000;
-  text-align: center;
-  width: 400px;
 }
-/* card view*/
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
   background: #fafbfc;
@@ -175,6 +173,7 @@ body .container {
    box-shadow: inset 5px 5px 5px rgba (255, 254,254,0.2), inset -5px -5px -15px rgba(233,230,230,0.1),
    5px 5px 15px rgba(0, 0, 0.3), -5px -5px 15px rgba(255,255,255, 0.1);
    border-radius: 15px;
+   margin: 30px;
    transition: 0.5s;
  }
  body .container .card .box {
@@ -211,20 +210,104 @@ body .container .card .box .content {
   text-align: center;
 }
 
-/* body .container .card .box .content h2 {
-  position: absolute;
-  top: -10px;
-  right: 30px;
-  font-size: 8rem;
-  color: rgba(255, 255, 255, 0.1);
-} */
 
 body .container .card .box .content h3 {
   font-size: 1.8rem;
   color: rgb(150, 57, 14);
   z-index: 1;
   transition: 0.5s;
-  margin-bottom: 15px;
+  margi
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+ section{
+  background: url(back1.jpeg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+
+} 
+.content-area{
+  font-size: 20px;
+  margin-top: 160px;
+  margin-left: 30px;
+  width: 600px;
+}
+h1{
+  width: 380px;
+  font-size: 50px;
+
+}
+h2{
+  font-size: 20px;
+  color: rgb(82, 76, 76);
+  margin-top: 53px;
+
+
+}
+.button{
+  width: 250px;
+  height: 80px;
+  background-color:#ff9e1f;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  border-radius: 1.5em;
+}
+.button:hover{
+  color: white;
+}
+p{
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  color:#11010a;
+  font-style: italic;
+  font-weight: 1000;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #fafbfc;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0:
+}
+ body .container .card {
+   position: relative;
+   min-width: 320px;
+   height: 440px;
+   box-shadow: inset 5px 5px 5px rgba (255, 254,254,0.2), inset -5px -5px -15px rgba(233,230,230,0.1),
+   5px 5px 15px rgba(0, 0, 0.3), -5px -5px 15px rgba(255,255,255, 0.1);
+   border-radius: 15px;
+   margin: 30px;
+   transition: 0.5s;
+ }
+ n-bottom: 15px;
 }
 
 body .container .card .box .content p {
@@ -253,8 +336,6 @@ body .container .card .box .content a:hover {
   color: #000;
 }
 
-
-/* menu */
 .menu{
   padding: 0;
   display: grid;
@@ -267,13 +348,14 @@ body .container .card .box .content a:hover {
   padding: 120px 0 30px 0;
   grid-column: 1/-1;
   text-align: center;
-}.heading>h1{
+}
+}
+.heading>h1{
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 10px;
   margin-bottom: 10px;
 }
-
 .heading>h3{
   font-weight: 600;
   font-size: 22px;
@@ -286,7 +368,8 @@ body .container .card .box .content a:hover {
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   margin: 0 20px;
-}.food-items img{
+}
+.food-items img{
   position: relative;
   width: 100%;
   border-radius: 15px 15px 0 0;
@@ -327,11 +410,39 @@ body .container .card .box .content a:hover {
 }
 
 /*Double Decker*/
-.advert{
-  background-color: whitesmoke;
-  background: url(../assets/double.jpg), no-repeat, cornsilk;
-  background-size: cover;
+#text {
+    color: #ffc13a;
+    font-size: 40px;
+}
+.advert {
+    background-color: #f7fdf6;
+}
+.contain{
+  margin-top: 200px;
+  position: relative;
+  right: 200px;
+}
+.dble{
+  position: relative;
+  left: 400px;
+  bottom: 400px;
+
 }
 
 
+.description{
+  position: relative;
+  top: 200px;
 
+}
+.footerformat {
+    margin-left: 20px;
+    text-align: left;
+}
+.btncol {
+    background-color: #fa9638;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 10px;
+}
