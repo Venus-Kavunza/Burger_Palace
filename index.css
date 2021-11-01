@@ -7,13 +7,12 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  
 }
 nav{
+  background: url(../assets/body.png), no-repeat;
   height: 80px;
   width: 100%;
-  background: url(../assets/body.png), no-repeat;
-  background-size: cover;
+    background-size: cover;
   min-height: 704px;
   max-width: 1300%;
   font-family: 'Poppins', sans-serif;
@@ -120,7 +119,7 @@ a.active,a:hover{
 h1{
   width: 380px;
   font-size: 50px;
-
+ 
 }
 h2{
   font-size: 20px;
@@ -147,21 +146,21 @@ p{
   font-size: large;
   display: flex;
   flex-direction: row;
-  margin-left: 26em;
   color:#11010a;
   font-style: italic;
   font-weight: 1000;
-  text-align: center;
-  width: 400px;
 }
+
 /* card view*/
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
   background: #fafbfc;
 }
+
 body .container {
   display: flex;
   justify-content: center;
@@ -170,16 +169,32 @@ body .container {
   max-width: 1200px;
   margin: 40px 0;
 }
- body .container .card {
-   position: relative;
-   min-width: 320px;
-   height: 440px;
-   box-shadow: inset 5px 5px 5px rgba (255, 254,254,0.2), inset -5px -5px -15px rgba(233,230,230,0.1),
-   5px 5px 15px rgba(0, 0, 0.3), -5px -5px 15px rgba(255,255,255, 0.1);
-   border-radius: 15px;
-   transition: 0.5s;
- }
- body .container .card .box {
+
+body .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(255, 254, 254, 0.2),
+    inset -5px -5px 15px rgba(233, 230, 230, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+/* body .container .card:nth-child(1) .box .content a {
+  background: #2d2f30;
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background: #23c186;
+} */
+
+body .container .card .box {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -208,6 +223,7 @@ body .container .card .box:before {
   height: 100%;
   background: rgba(241, 236, 236, 0.03);
 }
+
 body .container .card .box .content {
   padding: 20px;
   text-align: center;
@@ -269,4 +285,100 @@ body .container .card .box .content a:hover {
   padding: 120px 0 30px 0;
   grid-column: 1/-1;
   text-align: center;
+}
+.heading>h1{
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+.heading>h3{
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+.food-items{
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 0 20px;
+}
+.food-items img{
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.details{
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+.details-sub{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.details-sub>h5{
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+  color: #9b3414;
+}
+.price{
+  text-align: right;
+}
+.details>p{
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: stretch;
+}
+.details> button{
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/*Double Decker*/
+#text {
+    color: #ffc13a;
+    font-size: 40px;
+}
+.advert {
+    background-color: #f7fdf6;
+}
+.contain{
+  margin-top: 200px;
+  position: relative;
+  right: 200px;
+}
+.dble{
+  position: relative;
+  left: 400px;
+  bottom: 400px;
+
+}
+
+
+.description{
+  position: relative;
+  top: 200px;
+
+}
+.footerformat {
+    margin-left: 20px;
+    text-align: left;
+}
+.btncol {
+    background-color: #fa9638;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 10px;
 }
