@@ -22,4 +22,4 @@ https://github.com/Venus-Kavunza/Burger_Palace
 ### Live Site
 View [Live] https://github.com/Venus-Kavunza/Burger_Palace
 ### Licence
-This project is under the  [MIT](LICENSE) licence
+This project is under the  [MIT](license) license
