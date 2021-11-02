@@ -9,7 +9,7 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 nav{
-  background: url("../assets/body.png"), no-repeat;
+  background: url("assets/body.png"), no-repeat;
   height: 80px;
   width: 100%;
     background-size: cover;
